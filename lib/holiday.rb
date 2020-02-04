@@ -35,16 +35,25 @@ def all_supplies_in_holidays(holiday_hash)
     capital_season = season.to_s.capitalize
     answer << "#{capital_season}:\n"
     holiday.each do |name, supplies|
+<<<<<<< HEAD
       capital_name_array = name.to_s.split('_')
         capital_name = ""
         capital_name_array.each do |array|
           capital_name << " #{array.capitalize}"
         end
+=======
+      capital_name = name.to_s.capitalize
+>>>>>>> f74a20053fe84e9c26c5ef04520bc3de4991a099
       capital_supplies = supplies.join(', ')
       answer << " #{capital_name}: #{capital_supplies}\n"
     end
   end
+<<<<<<< HEAD
   puts answer
+=======
+ p answer
+ # binding.pry
+>>>>>>> f74a20053fe84e9c26c5ef04520bc3de4991a099
 end
 
 def all_holidays_with_bbq(holiday_hash)
